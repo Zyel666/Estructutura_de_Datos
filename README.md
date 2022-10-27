@@ -1,3 +1,27 @@
 # Estructutura de Datos
-![DatComServ](https://user-images.githubusercontent.com/88680493/198282335-ab344ab8-aa2d-425f-8e66-8e88818fab6b.jpg)
+<div align="center">
+<img src="https://itcomunicacion.com.mx/wp-content/uploads/2020/09/DatComServ.jpg" align="center" style="width: 100%" />
+</div>  
+  
+
+### <div align="center">Estructura de datos</div>  
+  
+
+- Hito 2  
+  
+
+- Hito 3   
+  
+
+- Hito 4  
+  
+
+- Hito 5  
+  
+
+<br/>  
+
+
+## My Skill Set  
+<table><tr><td valign="top" width="33%">
 
