@@ -24,13 +24,7 @@ Trabajos de hito 4
 
 Proyecto hito 5  
 
-- [Procesual]  
+- [Procesual]()  
   
 
-![Listening to on Spotify](https://rishavanand.github.io/static/images/spotify-readme-example.svg)  
-
 <br/>  
-
-
-## My Skill Set  
-<table><tr><td valign="top" width="33%">
