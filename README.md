@@ -9,7 +9,13 @@
 
 Trabajos de Hito 2 
 
-- [Procesual](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%202)  
+- [Procesual](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%202)
+
+- [Laboratorio 1](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%202/Ejercicio1)
+
+- [Evaluación H2](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%202/H2Defensa)
+
+  
   
 
 Tareas del Hito 3 
@@ -18,7 +24,7 @@ Tareas del Hito 3
 
 - Laboratorio de [pila de cadenas](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%203/PailaCadenas)💻
 
-- Codigo de la [Evaluacion](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%203/DefensaDePilasHito3)  
+- Código de la [Evaluacion](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%203/DefensaDePilasHito3)  
   
 
 Trabajos de hito 4
