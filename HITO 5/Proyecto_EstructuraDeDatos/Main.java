@@ -80,7 +80,8 @@ public class Main {
         //CelularesVendidos(Cels, "Galaxy S10");
         //AccesoriosVendidos(obje, "Microfonos");
         //AñadirDatoDeCompra(Clients, "Jose", "Samsung J7");
-        CambioDeRol(Perso, "Jorge", "Gerente");
+        //CambioDeRol(Perso, "Jorge", "Gerente");
+        //AñadirDatosDeCliente(Clients, 6, "Julian", "Torrez", "149670785LP", "Galaxy J7");
 
     }
     //Marcar el celular como vendido
@@ -220,6 +221,33 @@ public class Main {
         Cels.vaciar(Aux);
         Cels.vaciar(Aux1);
         Cels.mostrar();
+    }
+    
+    public static void AñadirDatosDeCliente(Pila_Clientes pilaCl, int idCLient, String nombres, String apellidos, String ci, String compra)
+    {
+        Pila_Clientes  aux = new Pila_Clientes(10) ;
+        Clientes Comp = null;
+
+        while (!pilaCl.esVacio())
+        {
+            Comp  = pilaCl.eliminar();
+
+            if (Comp.getId_cliente() == (idCLient))
+            {
+                Comp.setNombre(nombres) ;
+                Comp.setApellidos(apellidos) ;
+                Comp.setCI(ci) ;
+                Comp.setCompra(compra);
+
+                aux.adicionar(Comp);
+            }
+            else
+            {
+                aux.adicionar(Comp);
+            }
+        }
+        pilaCl.vaciar(aux);
+        pilaCl.mostrar();
     }
 
 
