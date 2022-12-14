@@ -29,12 +29,12 @@ Tareas del Hito 3
 
 Trabajos de hito 4
  
-- [Procesual]()  
+- [Procesual](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/Hito%204)  
   
 
 Proyecto hito 5  
 
-- [Procesual]()  
+- [Proyecto](https://github.com/Zyel666/Estructutura_de_Datos/tree/main/HITO%205)  
   
 
 <br/>  
