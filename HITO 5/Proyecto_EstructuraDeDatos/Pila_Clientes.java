@@ -74,6 +74,7 @@ public class Pila_Clientes {
     }
 
     public void llenar() { }
+
     public void mostrar()
     {
         Clientes elemento = null;

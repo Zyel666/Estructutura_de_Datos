@@ -18,8 +18,8 @@ public class Detalle_De_Tienda {
     public void mostrar()
     {
         System.out.println(this.Nombre_tienda);
-        System.out.println(this.Dueño);
-        System.out.println(this.nro_telefono);
-        System.out.println(this.ubicacion);
+        System.out.println("Propietario: "+ this.Dueño);
+        System.out.println("Numero de Telefono: "+ this.nro_telefono);
+        System.out.println("Ubicacion: "+ this.ubicacion);
     }
 }

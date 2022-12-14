@@ -7,11 +7,16 @@ public class Main {
         Detalle_De_Tienda c1 = new Detalle_De_Tienda(" CellStore", " Raul Alvares",  78965412, " Av. 6 de marzo");
         c1.mostrar();
 
-        Celulares cel1 = new Celulares(654653213, "Samsung J7", "Samsung", "1200 bs","Disponible");
-        Celulares cel2 = new Celulares(645987946, "Tecno camon 16","Tecno", "900 bs","Disponible");
-        Celulares cel3 = new Celulares(987984654, "Huawei p20 pro","Huawei", "1000 bs","Disponible");
-        Celulares cel4 = new Celulares(546546548, "Samsung Galaxy S10","Samsung", "2500 bs","Disponible");
+        Celulares cel1 = new Celulares(654653213, "Galaxy J7", "Samsung", "1200 bs","Disponible");
+        Celulares cel2 = new Celulares(645987946, "camon 16","Tecno", "900 bs","Disponible");
+        Celulares cel3 = new Celulares(987984654, "p20 pro","Huawei", "1000 bs","Disponible");
+        Celulares cel4 = new Celulares(546546548, "Galaxy S10","Samsung", "2500 bs","Disponible");
         Celulares cel5 = new Celulares(654987984, "Realme 8","Realme", "1100 bs","Disponible");
+        Celulares cel6 = new Celulares(987984654, "Redmi K40","Xiaomi", "1518 bs","Disponible");
+        Celulares cel7 = new Celulares(987984654, "Spark 7","tecno", "800 bs","Disponible");
+        Celulares cel8 = new Celulares(987984654, "Redmi note 9","Xiaomi", "1221 bs","Disponible");
+        Celulares cel9 = new Celulares(987984654, "Nova Y70","Huawei", "900 bs","Disponible");
+        Celulares cel10 = new Celulares(987984654, "Poco X3 pro","Xiaomi", "1350 bs","Disponible");
 
         Cola_Celulares Cels = new Cola_Celulares(100);
         Cels.insertar(cel1);
@@ -19,6 +24,11 @@ public class Main {
         Cels.insertar(cel3);
         Cels.insertar(cel4);
         Cels.insertar(cel5);
+        Cels.insertar(cel6);
+        Cels.insertar(cel7);
+        Cels.insertar(cel8);
+        Cels.insertar(cel9);
+        Cels.insertar(cel10);
 
 //----------------------------------------------------------------------------------------------------------------------
         Accesorios Acc1 = new Accesorios(1, "Auriculares", "20 bs","Disponible");
@@ -65,26 +75,25 @@ public class Main {
         //Clients.mostrar();
         //Perso.mostrar();
 
-        //CelularesVendidos(Cels, "Samsung J7", "1200 bs");
-        //AccesoriosVendidos(obje, "Microfonos", "15 bs");
+        //BuscarCelular(Cels, "Huawei p20 pro");
+        //moverCelularesDeMarca(Cels, "Huawei");
+        //CelularesVendidos(Cels, "Galaxy S10");
+        //AccesoriosVendidos(obje, "Microfonos");
         //AñadirDatoDeCompra(Clients, "Jose", "Samsung J7");
-        //CambioDeRol(Perso, "Jorge", "Gerente");
-        //BuscarCelular(Cels, "Realme 8");
-        //moverCelularesDeMarca(Cels, "Samsung");
-
+        CambioDeRol(Perso, "Jorge", "Gerente");
 
     }
     //Marcar el celular como vendido
-    public static void CelularesVendidos(Cola_Celulares Ncels, String modelo, String Venta)
+    public static void CelularesVendidos(Cola_Celulares Ncels, String modelo)
     {
         Cola_Celulares Aux = new Cola_Celulares(100) ;
         while (!Ncels.esVacio())
         {
             Celulares DatoMod = Ncels.eliminar();
 
-            if (DatoMod.getMarca().equals(modelo) && DatoMod.getEstado().equals(Venta) )
+            if (DatoMod.getModelo().equals(modelo) )
             {
-                DatoMod.setPrecio("Vendido") ;
+                DatoMod.setEstado("Vendido") ;
                 Aux.insertar(DatoMod);
             }
             else
@@ -100,16 +109,16 @@ public class Main {
     }
 
     //Marcar los Accesorios vendidos
-    public static void AccesoriosVendidos(Cola_Accesorios NAcc, String modelo, String Venta)
+    public static void AccesoriosVendidos(Cola_Accesorios NAcc, String modelo)
     {
         Cola_Accesorios Aux = new Cola_Accesorios(100) ;
         while (!NAcc.esVacio())
         {
             Accesorios DatoMod = NAcc.eliminar();
 
-            if (DatoMod.getNombre().equals(modelo) && DatoMod.getPrecios().equals(Venta) )
+            if (DatoMod.getNombre().equals(modelo))
             {
-                DatoMod.setPrecios("Vendido") ;
+                DatoMod.setEstado("Vendido") ;
                 Aux.insertar(DatoMod);
             }
             else
@@ -134,7 +143,7 @@ public class Main {
         while (!NCel.esVacio())
         {
             CelElim = NCel.eliminar();
-            if (CelElim.getMarca().equals(nombre))
+            if (CelElim.getModelo().equals(nombre))
             {
                 Aux.insertar(CelElim);
             }
